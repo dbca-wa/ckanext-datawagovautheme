@@ -3,16 +3,8 @@
    ===================================================== */
 
 
-.leaflet-draw-toolbar a {
-        background-image: url('img/spritesheet.png');
-        background-repeat: no-repeat;
-}
-
-.leaflet-retina .leaflet-draw-toolbar a {
-        background-image: url('img/spritesheet-2x.png');
-        background-size: 270px 30px;
-}
-
+// .leaflet-draw-toolbar a {background-image: url('img/spritesheet.png'); background-repeat: no-repeat;}
+// .leaflet-retina .leaflet-draw-toolbar a { background-image: url('img/spritesheet-2x.png'); background-size: 270px 30px;}
 
 
 .account-masthead {
@@ -70,7 +62,7 @@
 /* Padding around logo and search */
 .dwga-header-row {
   padding: 10px;
-  margin-left: 0px; 
+  margin-left: 0px;
 }
 
 
@@ -148,12 +140,12 @@
 
 .masthead a,
 .masthead hgroup h2,
-.masthead .nav > li > a, 
-.masthead .nav > li > a:focus, 
-.masthead .nav > li > a:hover, 
-.masthead .nav > .active > a, 
-.masthead .nav > .active > a:hover, 
-.masthead .nav > .active > a:focus, 
+.masthead .nav > li > a,
+.masthead .nav > li > a:focus,
+.masthead .nav > li > a:hover,
+.masthead .nav > .active > a,
+.masthead .nav > .active > a:hover,
+.masthead .nav > .active > a:focus,
 .account-masthead .account .notifications a span {
   color: rgb(105,115,124);
   text-shadow: none;
