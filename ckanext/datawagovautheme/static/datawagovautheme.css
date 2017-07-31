@@ -2,15 +2,18 @@
    The "account masthead" bar across the top of the site
    ===================================================== */
 
-
-// .leaflet-draw-toolbar a {background-image: url('img/spritesheet.png'); background-repeat: no-repeat;}
-// .leaflet-retina .leaflet-draw-toolbar a { background-image: url('img/spritesheet-2x.png'); background-size: 270px 30px;}
+/* Fix spatial search icons */
+.leaflet-draw-toolbar a {
+  background-image: url('img/spritesheet.png'); background-repeat: no-repeat;
+}
+.leaflet-retina .leaflet-draw-toolbar leaflet-draw-draw-rectangle a { 
+  background-image: url('img/spritesheet-2x.png'); background-size: 270px 30px;
+}
 
 
 .account-masthead {
-  height: 39px;
   background: none;
-  background-color: #FEFEFE;
+  background-color: #000000; //#FEFEFE;
 }
 
 /* The "bubble" containing the number of new notifications. */
@@ -23,20 +26,28 @@
   color: rgb(105,115,124);
 }
 
+.account-masthead .account ul li a span.text {
+  color: rgb(105,115,124);
+  background-color: #000000; //#FEFEFE;
+  position: static;
+  top: 0px;
+  left: 0px;
+}
+
 /* Transparent separator between links */
 .account-masthead .account ul li {
   border-left: 2px transparent;
 }
 
 /* Links on a:hover. */
-.account-masthead .account ul li a:hover {
-  color: rgb(40, 40, 40);
-  background-color: #FFFFFF;
+.account-masthead a:hover {
+  color: #FCFCFC;
+  background-color: #000000;
 }
 
 /* The "dashboard" and number of notifiations background */
 .account-masthead .account .notifications a:hover span {
-  color: rgb(105,115,124);
+  color: #FEFEFE; //rgb(105,115,124);
   background-color: inherit;
 }
 
@@ -70,6 +81,10 @@
   display: inline-block;
 }
 
+.logo img {
+  height: 50px;
+}
+
 .dwga-title {
   margin-left: 15px;
 }
@@ -78,9 +93,13 @@
   border-top: 1px solid #efefef;
   border-bottom: 1px solid #efefef;
   background: none;
-  background-color: #FCFCFC;
+  background-color: #005695; // #FCFCFC;
 }
 
+
+.masthead .nav-collapse {
+    padding-top: 0px;
+}
 
 .dwga-header {
   color: #69737c;
@@ -147,7 +166,7 @@
 .masthead .nav > .active > a:hover,
 .masthead .nav > .active > a:focus,
 .account-masthead .account .notifications a span {
-  color: rgb(105,115,124);
+  color: #FEFEFE; //rgb(105,115,124);
   text-shadow: none;
   margin-left: 2px;
 }
@@ -221,11 +240,12 @@ body {
 .site-footer,
 .site-footer label,
 .site-footer small {
-  color: rgb(105,115,124);
+  color: #FEFEFE; //rgb(105,115,124);
+  background-color: #005695; // #FCFCFC;
 }
 /* The link texts in the footer. */
 .site-footer a {
-  color: rgb(105,115,124);
+  color: #FEFEFE; //rgb(105,115,124);
 }
 
 

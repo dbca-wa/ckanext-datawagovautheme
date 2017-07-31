@@ -44,10 +44,10 @@
     {% endblock %}
   </section>
 
-  {% block package_search_results_api %}
-  <section class="module">
+  {# block package_search_results_api #}
+  <!-- section class="module">
     <div class="module-content">
-      {% block package_search_results_api_inner %}
+      {# block package_search_results_api_inner #}
       <small>
         {% set api_link = h.link_to(_('API'), h.url_for(controller='api', action='get_api', ver=3)) %}
         {% set api_doc_link = h.link_to(_('API Docs'), 'http://docs.ckan.org/en/{0}/api/'.format(g.ckan_doc_version)) %}
@@ -62,10 +62,10 @@
           {% endtrans %}
         {%- endif %}
       </small>
-      {% endblock %}
+      {# endblock #}
     </div>
-  </section>
-  {% endblock %}
+  </section-->
+  {# endblock #}
 {% endblock %}
 
 
