@@ -10,10 +10,9 @@
   background-image: url('img/spritesheet-2x.png'); background-size: 270px 30px;
 }
 
-
 .account-masthead {
   background: none;
-  background-color: #000000; //#FEFEFE;
+  background-color: #000000;
 }
 
 /* The "bubble" containing the number of new notifications. */
@@ -23,34 +22,32 @@
 
 /* The text and icons in the user account info. */
 .account-masthead .account ul li a {
-  color: rgb(105,115,124);
+  color: #69737c;
 }
 
-.account-masthead .account ul li a span.text {
-  color: rgb(105,115,124);
-  background-color: #000000; //#FEFEFE;
+.account-masthead .account ul li a,
+.account-masthead .account ul li a span.text,
+.account-masthead .account ul li a span.username,
+.account-masthead .account ul li a span.username
+ {
+  color: #69737c;
+  background-color: #000000;
   position: static;
   top: 0px;
   left: 0px;
 }
 
+/* Links on a:hover. */
+.account-masthead .account ul li a:hover span.text {
+  color: #FCFCFC;
+  background-color: inherit;
+}
+
+
 /* Transparent separator between links */
 .account-masthead .account ul li {
   border-left: 2px transparent;
 }
-
-/* Links on a:hover. */
-.account-masthead a:hover {
-  color: #FCFCFC;
-  background-color: #000000;
-}
-
-/* The "dashboard" and number of notifiations background */
-.account-masthead .account .notifications a:hover span {
-  color: #FEFEFE; //rgb(105,115,124);
-  background-color: inherit;
-}
-
 
 /* ========================================================================
    The main masthead bar that contains the site logo, nav links, and search
