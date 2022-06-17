@@ -16,4 +16,8 @@ class DBCATheme(plugins.SingletonPlugin):
         # plugin.py file.
         toolkit.add_template_directory(config, "templates")
         toolkit.add_public_directory(config, "static")
+
+        # Add this plugin's public dir to CKAN's extra_public_paths, so
+        # that CKAN will use this plugin's custom static files.
+        toolkit.add_public_directory(config, 'public')
         
