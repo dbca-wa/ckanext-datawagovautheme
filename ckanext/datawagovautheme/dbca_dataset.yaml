@@ -7,7 +7,7 @@ dataset_fields:
 - field_name: title
   label: Title
   display_property: dcat:Dataset/dct:title
-  validators: if_empty_same_as(name) unicode
+  validators: if_empty_same_as(name) unicode_safe
   form_snippet: large_text.html
   form_attrs:
     data-module: slug-preview-target
@@ -15,7 +15,7 @@ dataset_fields:
 
 - field_name: name
   label: URL
-  validators: not_empty unicode name_validator package_name_validator
+  validators: not_empty unicode_safe name_validator package_name_validator
   form_snippet: slug.html
   form_placeholder: eg. my-dataset
 
