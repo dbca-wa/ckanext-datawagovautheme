@@ -43,7 +43,7 @@ dataset_fields:
 - field_name: owner_org
   label: Organization
   display_property: dct:publisher
-  validators: owner_org_validator unicode
+  validators: owner_org_validator unicode_safe
   form_snippet: organization.html
 
 - field_name: data_portal
