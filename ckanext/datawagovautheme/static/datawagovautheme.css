@@ -88,9 +88,8 @@
 
 .masthead {
   background: none;
-  background-color: #005695; // #FCFCFC;
+  background-color: #FCFCFC; /* #FCFCFC; #005695 */ 
 }
-
 
 .masthead .nav-collapse {
     padding-top: 0px;
@@ -161,7 +160,7 @@
 .masthead .nav > .active > a:hover,
 .masthead .nav > .active > a:focus,
 .account-masthead .account .notifications a span {
-  color: #FEFEFE; //rgb(105,115,124);
+  color: #FEFEFE; 
   text-shadow: none;
   margin-left: 2px;
 }
@@ -236,12 +235,12 @@ body {
 .site-footer,
 .site-footer label,
 .site-footer small {
-  color: #FEFEFE; //rgb(105,115,124);
-  background-color: #005695; // #FCFCFC;
+  color: #FEFEFE;
+  background-color: #005695;
 }
 /* The link texts in the footer. */
 .site-footer a {
-  color: #FEFEFE; //rgb(105,115,124);
+  color: #FEFEFE; 
 }
 
 
