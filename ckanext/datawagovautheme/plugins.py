@@ -1,18 +1,11 @@
 # encoding: utf-8
 from ckan.common import CKANConfig
-import ckan.plugins as plugins
-import ckan.plugins.toolkit as toolkit
+from ckan import plugins
+from ckan.plugins import toolkit
+
 
 class DBCATheme(plugins.SingletonPlugin):
-    '''DBCATheme plugin.
-
-    '''
-    pass
-
-
-from ckan.plugins import toolkit, IConfigurer, SingletonPlugin, implements
-
-class DBCATheme(SingletonPlugin):
+    """A custom theme and scheming datasets for DBCA."""
     # Declare that this class implements IConfigurer.
     plugins.implements(plugins.IConfigurer)
 
